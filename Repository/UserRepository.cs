@@ -96,7 +96,7 @@ namespace ApiPelicula.Repository
             {
                 UserName = userRegistrationDto.UserName,
                 Name = userRegistrationDto.Name,
-                Email = userRegistrationDto.UserName,
+                Email = userRegistrationDto.Email,
                 NormalizedEmail = userRegistrationDto.UserName.ToUpper(),
             };
 

@@ -44,6 +44,7 @@
                 }
             }
 
+            [AllowAnonymous]
             [Authorize(Roles = "admin")]
             [HttpGet("{id:int}", Name = "[controller]_GetEntity")]
             [ProducesResponseType(StatusCodes.Status200OK)]
@@ -88,6 +89,7 @@
                 }
             }
 
+            [AllowAnonymous]
             [Authorize(Roles = "admin")]
             [HttpPut("{id:int}")]
             [ProducesResponseType(StatusCodes.Status200OK)]

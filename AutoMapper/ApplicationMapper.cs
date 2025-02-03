@@ -3,6 +3,8 @@ using ApiPelicula.Models.DTOs.UserDto;
 using AutoMapper;
 using RestAPI.Models.DTOs;
 using RestAPI.Models.DTOs.DesignDTO;
+using RestAPI.Models.DTOs.PujaDTO;
+
 
 //using RestAPI.Models.DTOs.LibroDTO;
 using RestAPI.Models.Entity;
@@ -24,6 +26,10 @@ namespace ApiPelicula.AutoMapper
 
             CreateMap<DesignEntity, DesignDTO>().ReverseMap();
             CreateMap<CreateDesignDTO, DesignEntity>().ReverseMap();
+
+            CreateMap<PujaEntity, PujaDTO>().ReverseMap();
+            CreateMap<CreatePujaDTO, PujaEntity>().ReverseMap();
+
             CreateMap<AppUser, UserDto>().ReverseMap();
         }
     }

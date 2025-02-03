@@ -22,6 +22,8 @@ namespace ApiPelicula.Data
         //public DbSet<EditorialEntity> Editoriales { get; set; }
         public DbSet<SovietTankEntity> SovietTanks { get;set; }
         public DbSet<DesignEntity> Designs { get;set; }
+        public DbSet<PujaEntity> Pujas { get;set; }
+
 
     }
 }
