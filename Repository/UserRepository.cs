@@ -19,7 +19,7 @@ namespace ApiPelicula.Repository
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IMapper _mapper;
-        private readonly int TokenExpirationDays = 7;
+        private readonly int TokenExpirationDays = 10;
 
         public UserRepository(ApplicationDbContext context, IConfiguration config,
             UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IMapper mapper)

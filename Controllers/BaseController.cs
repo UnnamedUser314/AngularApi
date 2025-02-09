@@ -26,7 +26,7 @@
                 _logger = logger;
             }
 
-            [AllowAnonymous]
+            
             [HttpGet]
             [Authorize(Roles = "admin")]
             [ProducesResponseType(StatusCodes.Status200OK)]
@@ -44,7 +44,7 @@
                 }
             }
 
-            [AllowAnonymous]
+            
             [Authorize(Roles = "admin")]
             [HttpGet("{id:int}", Name = "[controller]_GetEntity")]
             [ProducesResponseType(StatusCodes.Status200OK)]
